@@ -11,7 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180802202255) do
+ActiveRecord::Schema.define(version: 20180802210145) do
+
+  create_table "insumos", force: :cascade do |t|
+    t.string   "descripcion"
+    t.string   "marca"
+    t.string   "cantidad"
+    t.string   "unidad_medida"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "mesas", force: :cascade do |t|
+    t.string   "nombre"
+    t.string   "descripcion"
+    t.string   "estado"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "perfils", force: :cascade do |t|
+    t.string   "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "productos", force: :cascade do |t|
+    t.string   "nombre"
+    t.string   "descripcion"
+    t.string   "precio"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "usuarios", force: :cascade do |t|
     t.string   "username"
