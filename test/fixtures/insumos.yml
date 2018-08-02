@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descripcion: MyString
+  marca: MyString
+  cantidad: MyString
+  unidad_medida: MyString
+
+two:
+  descripcion: MyString
+  marca: MyString
+  cantidad: MyString
+  unidad_medida: MyString

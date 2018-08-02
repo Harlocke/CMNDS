@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @insumo.descripcion %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @insumo.marca %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @insumo.cantidad %>
+</p>
+
+<p>
+  <strong>Unidad medida:</strong>
+  <%= @insumo.unidad_medida %>
+</p>
+
+<%= link_to 'Edit', edit_insumo_path(@insumo) %> |
+<%= link_to 'Back', insumos_path %>
